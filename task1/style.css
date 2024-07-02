@@ -51,12 +51,16 @@ header h1 {
   margin-bottom: 10px;
   text-align: center;
 }
-.content {
-  text-align: justify;
+.wrapper {
   max-width: 700px;
+  padding: 0 1.5rem;
   margin: 0 auto;
 }
 
+.content {
+  width: 100%;
+  text-align: justify;
+}
 #links {
   /* display: flex;
   align-items: center;
