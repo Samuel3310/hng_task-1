@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+.info_area {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-cont {
+  display: flex;
+  justify-content: center;
+}
+#goals {
+  padding: 0 1rem;
+}
+
+#goals h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.content {
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#links {
+  /* display: flex;
+  align-items: center;
+  gap: 2rem; */
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+#links li {
+  list-style: none;
+  background-color: white;
+}
+#links li a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #222;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btns {
+  display: flex;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5rem;
+  }
+}
