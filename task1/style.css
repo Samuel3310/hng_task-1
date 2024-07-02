@@ -132,17 +132,12 @@ footer {
 
   #slack-info .info_area {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .img-cont {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-
-  .img-cont img {
-    width: 80px;
-    height: 80px;
   }
 
   #goals .title {
