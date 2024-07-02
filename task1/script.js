@@ -1,9 +1,18 @@
-// Function to display current time in UTC
 function displayCurrentTime() {
   const now = new Date();
   const options = { weekday: "long", timeZone: "UTC" };
   const dayOfWeek = new Intl.DateTimeFormat("en-US", options).format(now);
-  const currentTime = now.toISOString().slice(11, 19); // Extract HH:mm:ss from ISO string
+
+  const hours = now.getUTCHours();
+  const minutes = now.getUTCMinutes();
+  const seconds = now.getUTCSeconds();
+
+  const period = hours >= 12 ? "PM" : "AM";
+
+  const hours12 = hours % 12 || 12;
+  const currentTime = `${hours12}:${minutes
+    .toString()
+    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")} ${period}`;
 
   document.querySelector('[data-testid="currentTimeUTC"]').textContent =
     currentTime;
